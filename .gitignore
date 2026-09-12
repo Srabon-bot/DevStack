@@ -7,10 +7,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
 dist
 dist-ssr
 *.local
+
+# Project files
+src/components/stacks/SelectedStacks.tsx
+src/components/stacks/SelectedStacksCard.tsx
 
 # Editor directories and files
 .vscode/*
