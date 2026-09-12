@@ -14,8 +14,6 @@ dist-ssr
 *.local
 
 # Project files
-src/components/stacks/SelectedStacks.tsx
-src/components/stacks/SelectedStacksCard.tsx
 
 # Editor directories and files
 .vscode/*
