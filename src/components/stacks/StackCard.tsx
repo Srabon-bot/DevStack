@@ -16,7 +16,11 @@ const StackCard = ({ stack, selectedStacks, setSelectedStacks }: StackCardProps)
     };
 
     return (
-        <div className="card bg-white rounded-2xl border border-[#F1F5F9] p-5 shadow-sm transition-transform duration-200 ease-out hover:scale-[1.03] hover:shadow-md">
+        <div
+            className={`card bg-white rounded-2xl border p-5 shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:shadow-md ${
+                isSelected ? "border-pink-400" : "border-[#F1F5F9]"
+            }`}
+        >
             <div className="flex items-center justify-between">
                 <img src={stack.icon} alt={stack.name} className="h-8 w-8" />
                 <div className={`badge border-none px-3 py-3 rounded-full font-medium ${stack.badgeColor}`}>
@@ -26,7 +30,7 @@ const StackCard = ({ stack, selectedStacks, setSelectedStacks }: StackCardProps)
 
             <h2 className="text-xl font-bold mt-4">{stack.name}</h2>
 
-            <p className="text-base-content/60 mt-2">
+            <p className="text-base-content/60 mt-2 line-clamp-3">
                 {stack.description}
             </p>
 
@@ -46,9 +50,9 @@ const StackCard = ({ stack, selectedStacks, setSelectedStacks }: StackCardProps)
             <button
                 onClick={handleStacks}
                 disabled={isSelected}
-                className={`btn border rounded-lg mt-4 w-full transition-colors duration-200 ${
+                className={`btn border rounded-lg mt-4 w-full transition-colors duration-200 font-semibold ${
                     isSelected
-                        ? "bg-pink-50 text-pink-500 border-pink-200 hover:bg-pink-50"
+                        ? "bg-pink-50 text-pink-600 border-pink-200 hover:bg-pink-50"
                         : "bg-slate-900 text-white border-slate-900 hover:bg-slate-800"
                 }`}
             >
