@@ -1,0 +1,20 @@
+:root {
+  --gradient-brand: linear-gradient(90deg, #FF5722 0%, #D81B7E 50%, #7C3AED 100%);
+}
+
+.gradient-text {
+  background-image: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-bg {
+  background-image: var(--gradient-brand);
+  color: white;
+  border: none;
+}
+
+.gradient-bg:hover {
+  opacity: 0.9;
+}
