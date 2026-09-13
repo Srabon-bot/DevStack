@@ -2,3 +2,21 @@
 @plugin "daisyui";
 
 @source inline("bg-pink-50 text-pink-600 bg-emerald-50 text-emerald-600 bg-orange-50 text-orange-600 bg-indigo-50 text-indigo-600 bg-sky-50 text-sky-700 bg-sky-600 bg-blue-50 text-blue-600 bg-blue-700 text-blue-700 bg-amber-50 text-amber-700 bg-purple-50 text-purple-600 bg-red-50 text-red-600 bg-yellow-50 text-yellow-700 bg-cyan-50 text-cyan-700 bg-fuchsia-50 text-fuchsia-600 bg-pink-700 bg-pink-500 text-pink-500 bg-slate-100 text-slate-600 text-slate-700 bg-violet-50 text-violet-600 text-violet-700 bg-rose-50 text-rose-600 text-emerald-700 text-indigo-700 text-indigo-500");
+
+.footer-link {
+  @apply font-normal text-slate-500;
+}
+.footerHeader-link {
+  @apply font-bold text-[#0F172A];
+}
+.text-card-sm {
+  @apply text-[14px];
+}
+
+.text-card-md {
+  @apply text-[15px];
+}
+
+.social-link {
+  @apply font-bold text-[#0F172A] hover:text-pink-600 transition-colors duration-200;
+}

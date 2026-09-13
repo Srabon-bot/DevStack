@@ -44,7 +44,7 @@ const SelectedStacks = ({ stacks, selectedStacks, setSelectedStacks }: selectedS
 
                     <button
                         onClick={handleRemoveAll}
-                        className="btn btn-ghost text-[#D82C20] hover:bg-red-50 border border-[#ED8C85] rounded-lg w-full mt-8"
+                        className="btn btn-ghost text-[#D82C20] hover:bg-red-50 border border-[#ED8C85] rounded-lg w-full mt-8 text-card-md"
                     >
                         Remove All
                     </button>
