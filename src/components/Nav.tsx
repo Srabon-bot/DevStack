@@ -21,20 +21,8 @@ const Nav = () => {
                         role="button"
                         className="btn btn-ghost btn-circle"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h16M4 18h7"
-                            />
-                        </svg>
+                        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+
                     </div>
 
                     <ul
@@ -46,8 +34,8 @@ const Nav = () => {
                                 <a
                                     href="#"
                                     className={`text-[14px] ${item.active
-                                            ? 'font-medium text-[#DB2777]'
-                                            : 'font-semibold text-[#475569]'
+                                        ? 'font-medium text-[#DB2777]'
+                                        : 'font-semibold text-[#475569]'
                                         }`}
                                 >
                                     {item.label}
@@ -62,7 +50,7 @@ const Nav = () => {
                     <img
                         src={logoText}
                         alt="Dev Stack"
-                        className="h-7 lg:h-auto"
+                        className="h-8 lg:h-10"
                     />
                 </div>
 
@@ -74,8 +62,8 @@ const Nav = () => {
                                 <a
                                     href="#"
                                     className={`text-[14px] ${item.active
-                                            ? 'font-medium text-[#DB2777]'
-                                            : 'font-semibold text-[#475569]'
+                                        ? 'font-medium text-[#DB2777]'
+                                        : 'font-semibold text-[#475569]'
                                         }`}
                                 >
                                     {item.label}
