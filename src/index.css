@@ -4,7 +4,7 @@
 
 .gradient-text {
   background-image: var(--gradient-brand);
-  background-size: 100vw 100vh;
+  background-size: clamp(500px, 45vw, 700px) 100vh;
   background-attachment: fixed;
   background-position: 0 0;
   background-clip: text;
@@ -14,7 +14,7 @@
 
 .gradient-bg {
   background-image: var(--gradient-brand);
-  background-size: 100vw 100vh;
+  background-size: clamp(500px, 45vw, 700px) 100vh;
   background-attachment: fixed;
   background-position: 0 0;
   color: white;

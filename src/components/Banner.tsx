@@ -25,7 +25,7 @@ const Banner = () => {
                         <Gradient as="button" variant="bg" className="btn rounded-lg flex-1 sm:flex-none sm:w-52">
                             Explore Technologies
                         </Gradient>
-                        <button className="btn rounded-lg flex-1 sm:flex-none sm:w-52">
+                        <button className="btn rounded-lg flex-1 sm:flex-none sm:w-52 text-[#374151]">
                             Learn More
                         </button>
                     </div>
