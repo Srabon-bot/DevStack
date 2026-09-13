@@ -2,6 +2,7 @@ import { use, useState } from 'react';
 import type { StackType } from '../../types';
 import AllStacks from './AllStacks';
 import SelectedStacks from './SelectedStacks';
+import Gradient from '../Gradient';
 
 interface StacksProps {
     stackPromise: Promise<StackType[]>;
@@ -15,7 +16,7 @@ const Stacks = ({ stackPromise }: StacksProps) => {
         <div className="container mx-auto px-4">
             <div className="mb-8 text-center lg:text-left">
                 <h1 className="text-2xl sm:text-3xl font-extrabold">
-                    Explore the <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-fuchsia-600">Technologies</span>
+                    Explore the <Gradient as="span" variant="text">Technologies</Gradient>
                 </h1>
                 <p className="text-base-content/60 mt-1">
                     Pick one technology per category to build your ideal stack.
