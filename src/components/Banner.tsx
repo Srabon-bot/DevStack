@@ -1,4 +1,3 @@
-import React from 'react';
 import bannerStack from '../assets/banner-stack.png';
 import Gradient from './Gradient';
 
