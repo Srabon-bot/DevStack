@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer className="border-t border-slate-200 bg-white text-base-content w-full mt-15">
             <div className="container mx-auto p-6 lg:p-10">
-                <div className="footer sm:footer-horizontal flex flex-col lg:flex-row gap-10 lg:gap-0 text-center lg:text-left items-center lg:items-start">
-                    <aside className="flex flex-col items-center lg:items-start">
+                <div className="footer sm:footer-horizontal">
+                    <aside className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-auto">
                         <div className="flex items-center">
                             <img
                                 src={Footerlogo}
@@ -20,26 +20,28 @@ const Footer = () => {
                             modern software.
                         </p>
 
-                        <div className="flex items-center gap-5 mt-4">
+                        <div className="flex items-center gap-2 sm:gap-5 mt-4">
                             <a href="#" className="text-card-md social-link">GitHub</a>
+                            <span className="text-[#CBD5E1] lg:hidden">•</span>
                             <a href="#" className="text-card-md social-link">Twitter</a>
+                            <span className="text-[#CBD5E1] lg:hidden">•</span>
                             <a href="#" className="text-card-md social-link">LinkedIn</a>
                         </div>
                     </aside>
 
-                    <nav className="flex flex-col items-center lg:items-start">
+                    <nav className="hidden lg:flex lg:flex-col">
                         <h6 className="footerHeader-link text-card-md">PRODUCT</h6>
                         <a className="link link-hover footer-link text-card-md">Home</a>
                         <a className="link link-hover footer-link text-card-md">Technologies</a>
                         <a className="link link-hover footer-link text-card-md">Projects</a>
                     </nav>
-                    <nav className="flex flex-col items-center lg:items-start">
+                    <nav className="hidden lg:flex lg:flex-col">
                         <h6 className="footerHeader-link text-card-md">COMPANY</h6>
                         <a className="link link-hover footer-link text-card-md">About</a>
                         <a className="link link-hover footer-link text-card-md">Contact</a>
                         <a className="link link-hover footer-link text-card-md">Careers</a>
                     </nav>
-                    <nav className="flex flex-col items-center lg:items-start">
+                    <nav className="hidden lg:flex lg:flex-col">
                         <h6 className="footerHeader-link text-card-md">LEGAL</h6>
                         <a className="link link-hover footer-link text-card-md">Privacy policy</a>
                         <a className="link link-hover footer-link text-card-md">Terms of use</a>
