@@ -33,9 +33,7 @@ body {
 .gradient-text {
   background-image: var(--gradient-brand);
   background-repeat: no-repeat;
-  background-size: var(--gradient-span) 100vh;
-  background-attachment: fixed;
-  background-position: 0 0;
+  background-size: 100% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -44,9 +42,7 @@ body {
 .gradient-bg {
   background-image: var(--gradient-brand);
   background-repeat: no-repeat;
-  background-size: var(--gradient-span) 100vh;
-  background-attachment: fixed;
-  background-position: 0 0;
+  background-size: 100% 100%;
   color: white;
   border: none;
 }
@@ -58,15 +54,19 @@ body {
 .footer-link {
   @apply font-normal text-slate-500;
 }
+
 .footerHeader-link {
   @apply font-bold text-[#0F172A];
 }
+
 .text-card-sm {
   @apply text-[14px];
 }
+
 .text-card-md {
   @apply text-[15px];
 }
+
 .social-link {
   @apply font-bold text-[#0F172A] hover:text-pink-600 transition-colors duration-200;
 }
