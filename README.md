@@ -22,7 +22,7 @@ Dev Stack Builder lets you browse a curated list of popular development technolo
 
 ## 🔗 Links
 
-- **Live Site:** [add your deployed link here]
+- **Live Site:** https://devstack-jade.vercel.app/
 - **Repository:** https://github.com/Srabon-bot/DevStack
 
 ---
