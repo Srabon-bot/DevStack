@@ -10,14 +10,64 @@ const Nav = () => {
         { label: 'Contact', active: false },
     ];
 
-
     return (
         <div className="border-b border-slate-200 sticky top-0 z-50 bg-white">
-            <div className="flex items-center justify-between container mx-auto py-4">
-                <div>
-                    <img src={logoText} alt="Logo" />
+            <div className="flex items-center justify-between container mx-auto py-4 px-4">
+
+                {/* Hamburger - mobile only */}
+                <div className="dropdown lg:hidden">
+                    <div
+                        tabIndex={0}
+                        role="button"
+                        className="btn btn-ghost btn-circle"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16M4 18h7"
+                            />
+                        </svg>
+                    </div>
+
+                    <ul
+                        tabIndex={0}
+                        className="menu menu-sm dropdown-content bg-white rounded-box z-10 mt-3 w-48 p-2 shadow-lg border border-slate-100"
+                    >
+                        {navItems.map((item) => (
+                            <li key={item.label}>
+                                <a
+                                    href="#"
+                                    className={`text-[14px] ${item.active
+                                            ? 'font-medium text-[#DB2777]'
+                                            : 'font-semibold text-[#475569]'
+                                        }`}
+                                >
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
+
+                {/* Logo */}
                 <div>
+                    <img
+                        src={logoText}
+                        alt="Dev Stack"
+                        className="h-7 lg:h-auto"
+                    />
+                </div>
+
+                {/* Desktop nav links */}
+                <div className="hidden lg:block">
                     <ul className="flex items-center gap-4">
                         {navItems.map((item) => (
                             <li key={item.label}>
@@ -34,10 +84,18 @@ const Nav = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="flex items-center">
-                    <button className="btn btn-ghost rounded-full">Sign In</button>
-                    <button className="btn text-white bg-[#D91B7E] rounded-full">Sign Up</button>
+
+                {/* Auth buttons */}
+                <div className="flex items-center gap-1">
+                    <button className="btn btn-ghost rounded-full btn-sm lg:btn-md">
+                        Sign In
+                    </button>
+
+                    <button className="btn text-white bg-[#D91B7E] rounded-full btn-sm lg:btn-md">
+                        Sign Up
+                    </button>
                 </div>
+
             </div>
         </div>
     );

@@ -15,7 +15,7 @@ const Stacks = ({ stackPromise }: StacksProps) => {
         <div className="container mx-auto px-4">
             <div className="mb-8">
                 <h1 className="text-3xl font-extrabold">
-                    Explore the <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-fuchsia-600">Technologies</span>
+                    Explore the <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-fuchsia-600">Technologies</span>
                 </h1>
                 <p className="text-base-content/60 mt-1">
                     Pick one technology per category to build your ideal stack.
