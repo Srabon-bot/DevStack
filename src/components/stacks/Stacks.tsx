@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import { use, useState } from 'react';
 import type { StackType } from '../../types';
 import AllStacks from './AllStacks';
 import SelectedStacks from './SelectedStacks';

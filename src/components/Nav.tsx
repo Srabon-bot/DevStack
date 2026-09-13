@@ -1,4 +1,3 @@
-import React from 'react';
 import logoText from '../assets/logo-text.png';
 
 const Nav = () => {

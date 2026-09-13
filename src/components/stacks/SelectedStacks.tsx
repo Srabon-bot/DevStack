@@ -1,4 +1,4 @@
-import React, { type Dispatch, type SetStateAction } from 'react';
+import { type Dispatch, type SetStateAction } from 'react';
 import type { StackType } from '../../types';
 import SelectedStacksCard from './SelectedStacksCard';
 import { toast } from 'react-toastify';
@@ -9,7 +9,7 @@ interface selectedStacksPorps {
     setSelectedStacks: Dispatch<SetStateAction<StackType[]>>;
 }
 
-const SelectedStacks = ({ stacks, selectedStacks, setSelectedStacks }: selectedStacksPorps) => {
+const SelectedStacks = ({selectedStacks, setSelectedStacks }: selectedStacksPorps) => {
 
     const handleRemoveAll = () => {
         setSelectedStacks([]);
