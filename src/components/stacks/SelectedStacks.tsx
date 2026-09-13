@@ -1,6 +1,7 @@
 import React, { type Dispatch, type SetStateAction } from 'react';
 import type { StackType } from '../../types';
 import SelectedStacksCard from './SelectedStacksCard';
+import { toast } from 'react-toastify';
 
 interface selectedStacksPorps {
     stacks: StackType[];
@@ -12,6 +13,7 @@ const SelectedStacks = ({ stacks, selectedStacks, setSelectedStacks }: selectedS
 
     const handleRemoveAll = () => {
         setSelectedStacks([]);
+        toast.info("All technologies removed from your stack.");
     };
 
     return (

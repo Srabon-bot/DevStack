@@ -1,5 +1,6 @@
 import React, { type Dispatch, type SetStateAction } from 'react';
 import type { StackType } from '../../types';
+import { toast } from 'react-toastify';
 
 interface StackCardProps {
     stack: StackType;
@@ -12,7 +13,12 @@ const StackCard = ({ stack, selectedStacks, setSelectedStacks }: StackCardProps)
     const isSelected = selectedStacks.some((s) => s.id === stack.id);
 
     const handleStacks = () => {
+        if (isSelected) {
+            toast.warning(`${stack.name} is already in your stack!`);
+            return;
+        }
         setSelectedStacks([...selectedStacks, stack]);
+        toast.success(`${stack.name} added to your stack!`);
     };
 
     return (
@@ -56,7 +62,7 @@ const StackCard = ({ stack, selectedStacks, setSelectedStacks }: StackCardProps)
                         : "bg-slate-900 text-white border-slate-900 hover:bg-slate-800"
                 }`}
             >
-                {isSelected ? "Added to Stack" : "Add to Stack"}
+                {isSelected ? "✓ Added to Stack" : "Add to Stack"}
             </button>
         </div>
     );

@@ -1,5 +1,6 @@
 import React, { type Dispatch, type SetStateAction } from 'react';
 import type { StackType } from '../../types';
+import { toast } from 'react-toastify';
 
 interface SelectedStackCardProps {
     stack: StackType;
@@ -14,6 +15,7 @@ const SelectedStacksCard = ({ stack, selectedStacks, setSelectedStacks }: Select
             (selectedStack) => selectedStack.id !== stack.id
         );
         setSelectedStacks(restStacks);
+        toast.info(`${stack.name} removed from your stack.`);
     };
 
     return (

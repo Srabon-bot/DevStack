@@ -5,6 +5,8 @@ import Nav from './components/Nav'
 import Stacks from './components/stacks/Stacks';
 import type { StackType } from './types';
 import Footer from './components/Footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const stackFetch = async (): Promise<StackType[]> => {
   const res = await fetch("/data.json");
@@ -15,15 +17,15 @@ const stackFetch = async (): Promise<StackType[]> => {
 const stackPromise = stackFetch();
 
 function App() {
-
   return (
     <>
       <Nav />
       <Banner />
-      <Suspense>
+      <Suspense fallback={<div className="text-center py-20">Loading technologies...</div>}>
         <Stacks stackPromise={stackPromise} />
       </Suspense>
-      <Footer/>
+      <Footer />
+      <ToastContainer position="top-center" autoClose={3000} />
     </>
   )
 }
