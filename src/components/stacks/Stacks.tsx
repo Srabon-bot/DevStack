@@ -15,7 +15,7 @@ const Stacks = ({ stackPromise }: StacksProps) => {
     return (
         <div className="container mx-auto px-4">
             <div className="mb-8 text-center lg:text-left">
-                <h1 className="text-2xl sm:text-3xl font-extrabold">
+                <h1 className="font-inter text-2xl sm:text-3xl font-extrabold">
                     Explore the <Gradient as="span" variant="text">Technologies</Gradient>
                 </h1>
                 <p className="text-base-content/60 mt-1">
